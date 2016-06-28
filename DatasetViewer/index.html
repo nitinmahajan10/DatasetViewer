@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>DataSet Viewer - Nitin</title>
+    <link rel="styleSheet" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css" />
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/service/dataSetSvc.js"></script>
+    <script src="js/Component/datatableViewer.js"></script>
+    <script src="js/Component/datasetViewer.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="mainCtrl" ng-init="onInit()">
+        <button ng-click="refreshData()">Refresh</button>
+        <dataset-viewer info="dataset"></dataset-viewer>
+    </div>
+</body>
+</html>
