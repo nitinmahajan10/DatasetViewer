@@ -16,13 +16,13 @@
     this.showDataTable = function (dataTable) {
         this.columns.length = 0;
 
-        if (this.info === undefined || this.info === null || this.info.lenght == 0) return;
+        if (dataTable === undefined || dataTable === null || dataTable.lenght == 0) return;
 
-        angular.forEach(this.info[0], function (value, key) {
+        angular.forEach(dataTable[0], function (value, key) {
             this.push({ field: key });
         }, this.columns);
 
-        this.gridOptions.data = this.info;
+        this.gridOptions.data = dataTable;
     }
 }
 
